@@ -12,4 +12,4 @@ RUN chmod +x /usr/src/app/import-data.sh
 
 EXPOSE 1433
 
-CMD /bin/bash ./entrypoint.sh
+CMD /bin/bash ./init.sh
