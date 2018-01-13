@@ -2,7 +2,7 @@
 sleep 90s
 
 #run the setup script to create the DB and the schema in the DB
-/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P mysql -d master -i setup.sql
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P msSQL1234  -d master -i setup.sql
 
 #import the data from the csv file
-/opt/mssql-tools/bin/bcp DemoData.dbo.Products in "/usr/src/app/Products.csv" -c -t',' -S localhost -U sa -P mysql
+/opt/mssql-tools/bin/bcp DemoDB.dbo.Products in "/usr/src/app/Products.csv" -c -t',' -S localhost -U sa -P msSQL1234

@@ -1,6 +1,6 @@
-CREATE DATABASE DemoData;
+CREATE DATABASE DemoDB;
 GO
-USE DemoData;
+USE DemoDB;
 GO
 CREATE TABLE Products (ID int, ProductName nvarchar(max));
 GO
